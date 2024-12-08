@@ -1,0 +1,48 @@
+.eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.evento {
+  display: flex;
+  align-items: center;  /* Alinea verticalmente la imagen y los detalles */
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.evento-img img {
+  width: 150px;  /* Puedes ajustar el tamaño de la imagen */
+  height: 150px;
+  object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsionarse */
+  border-radius: 8px;
+}
+
+.evento-details {
+  flex: 1;  /* Hace que el contenedor de los detalles ocupe el espacio restante */
+}
+
+.evento-details h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.evento-details p {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

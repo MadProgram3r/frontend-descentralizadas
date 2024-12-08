@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <div class="navbar-left">
+      <a class="logo" routerLink="/principal">Donations now</a>
+      <ul class="nav-links">
+        <li><a (click)="navEventos()">Eventos</a></li>
+      </ul>
+    </div>
+    @if (!isAuth()) {
+      <div class="navbar-right">
+        <button class="login-btn" (click)="navLogin()">Login</button>
+      </div>
+    }@else{
+      <div class="navbar-right">
+        <button class="login-btn" (click)="logOut()">Cerrar Sesión</button>
+      </div>
+    }
+    
+  </nav>
+  

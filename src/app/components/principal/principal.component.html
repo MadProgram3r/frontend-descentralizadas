@@ -1,0 +1,15 @@
+<div class="eventos">
+    <h1>Causas disponibles</h1>
+    @for (evento of eventos; track $index) {
+    <div class="evento">
+        <div class="evento-img">
+            <img [src]="evento.imagen" alt="Evento imagen" />
+        </div>
+        <div class="evento-details">
+            <h2>{{ evento.nombre }}</h2>
+            <p>{{ evento.descripcion }}</p>
+            <button (click)="irACompra(evento)">Donar</button>
+        </div>
+    </div>
+    }
+</div>

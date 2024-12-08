@@ -1,0 +1,60 @@
+.compra {
+  padding: 20px;
+}
+
+.compra-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.compra-left {
+  flex: 2;  /* Ocupa dos veces más espacio que la derecha */
+  display: flex;
+  gap: 20px;
+}
+
+.compra-img {
+  width: 200px;  /* Puedes ajustar el tamaño de la imagen */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.compra-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.compra-right {
+  flex: 1;  /* La parte derecha ocupa menos espacio */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.compra-right label {
+  margin-bottom: 5px;
+}
+
+.compra-right input {
+  margin-bottom: 15px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

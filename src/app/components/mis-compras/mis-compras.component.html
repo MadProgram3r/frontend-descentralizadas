@@ -1,0 +1,16 @@
+<div class="mis-compras-container">
+    <h1>Mis Compras</h1>
+    @if (compras.length > 0) {
+    @for (compra of compras; track $index) {
+    <div class="compra-item">
+        <h2>{{ compra.evento }}</h2>
+        <p><strong>Cantidad:</strong> {{ compra.cantidad }}</p>
+        <p><strong>Total:</strong> {{ compra.total | currency }}</p>
+        <p><strong>Fecha:</strong> {{ compra.fecha | date }}</p>
+    </div>
+    }
+    }@else {
+    <p>No tienes compras registradas.</p>
+    }
+
+</div>

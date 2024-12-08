@@ -1,0 +1,46 @@
+.mis-compras-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .compra-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compra-item h2 {
+    margin: 0 0 10px;
+    color: #3498db;
+  }
+  
+  .compra-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #34495e;
+  }
+  
+  p {
+    font-weight: bold;
+  }
+  
+  ng-template {
+    text-align: center;
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  

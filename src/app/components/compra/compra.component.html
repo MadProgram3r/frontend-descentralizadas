@@ -1,0 +1,43 @@
+<div class="compra">
+  <h1>Donar para aliviar tus pecados</h1>
+  @if (eventoSeleccionado) {
+  <div>
+    <div class="compra-details">
+      <!-- Sección izquierda: imagen, nombre y descripción -->
+      <div class="compra-left">
+        <img [src]="eventoSeleccionado.imagen" alt="Evento imagen" class="compra-img" />
+        <div class="compra-info">
+          <p><strong>Evento:</strong> {{ eventoSeleccionado.nombre }}</p>
+          <p><strong>Descripción:</strong> {{ eventoSeleccionado.descripcion }}</p>
+          @if (hash != "") {
+            <p><strong>Hash:</strong>{{hash}}</p>
+            <button type="button" class="generate-nft-btn" (click)="generateNFT()">
+              Generar NFT de recompensa
+            </button>
+          }
+          @if (contractNFT) {
+            <p><strong>Dirección del contrato NFT:</strong>{{contractNFT}}</p>
+            <p><strong>Id NFT:</strong>{{idToken}}</p>
+          }
+        </div>
+      </div>
+
+      <!-- Sección derecha: formulario para cantidad y botón de compra -->
+      <div class="compra-right">
+        <form (ngSubmit)="realizarDonacion()">
+
+          <label for="cantidad">Cantidad:</label>
+          <input id="cantidad" type="text" [(ngModel)]="cantidad" name="cantidad" required />
+
+          <button [disabled]="isButtonDisabled" type="submit">Donar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  }@else {
+  <p>No se seleccionó ningún evento. Por favor, regresa y selecciona uno.</p>
+  }
+
+
+
+</div>
